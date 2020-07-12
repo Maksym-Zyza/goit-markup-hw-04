@@ -33,15 +33,15 @@
         </nav>
 
         <ul class="page-header-adres list">
-          <li class="item">
+          <li class="adres-item">
             <a href="mailto:info@devstudio.com">
-              <img src="./img/envelope.svg" alt="envelope" />
+              <!-- <img src="./img/envelope.svg" alt="envelope" /> -->
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
+          <li class="adres-item">
             <a href="tel:+380961111111">
-              <img src="./img/Tel.svg" alt="telephone" />
+              <!-- <img src="./img/Tel.svg" alt="telephone" /> -->
               +38 096 111 11 11
             </a>
           </li>
@@ -52,11 +52,13 @@
     <main>
       <!-- Section 1 - Hero -->
       <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="button">Заказать услугу</button>
+        <div class="overlay">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button class="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Section 2 - Преймущества Веб студии -->
@@ -64,8 +66,7 @@
         <div class="container">
           <h2 hidden>Преймущества Веб студии</h2>
           <ul class="benefits list flex">
-            <li class="item">
-              <img src="./img/antenna_1.svg" alt="antenna" />
+            <li class="benefits-item">
               <h3 class="benefits-title">Внимание к деталям</h3>
               <p class="benefits-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -73,8 +74,7 @@
               </p>
             </li>
 
-            <li class="item">
-              <img src="./img/clock_1.svg" alt="clock" />
+            <li class="benefits-item">
               <h3 class="benefits-title">Пунктуальность</h3>
               <p class="benefits-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -82,8 +82,7 @@
               </p>
             </li>
 
-            <li class="item">
-              <img src="./img/diagram_1.svg" alt="diagram" />
+            <li class="benefits-item">
               <h3 class="benefits-title">Планирование</h3>
               <p class="benefits-text">
                 Равным образом консультация с широким активом в значительной
@@ -91,8 +90,7 @@
               </p>
             </li>
 
-            <li class="item">
-              <img src="./img/astronaut_1.svg" alt="astronaut" />
+            <li class="benefits-item">
               <h3 class="benefits-title">Современные технологии</h3>
               <p class="benefits-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -356,33 +354,33 @@
         <div class="social-pages-container">
           <h3 class="footer-accede">присоединяйтесь</h3>
           <ul class="footer-accede-social-pages list flex">
-            <li class="item">
+            <li class="social-item">
               <a aria-label="instagram link" href="">
-                <img
+                <!-- <img
                   src="./img/Ellipse_инста-1.svg"
                   alt="лого-инстаграм-white"
-                />
+                /> -->
               </a>
             </li>
-            <li class="item">
+            <li class="social-item">
               <a aria-label="twitter link" href="">
-                <img src="./img/Ellipse_twitter.svg" alt="лого-твитер-white" />
+                <!-- <img src="./img/Ellipse_twitter.svg" alt="лого-твитер-white" /> -->
               </a>
             </li>
-            <li class="item">
+            <li class="social-item">
               <a aria-label="facebook link" href="">
-                <img
+                <!-- <img
                   src="./img/Ellipse_фейсбук-1.svg"
                   alt="лого-фейсбук-white"
-                />
+                /> -->
               </a>
             </li>
-            <li class="item">
+            <li class="social-item">
               <a aria-label="linkidun link" href="">
-                <img
+                <!-- <img
                   src="./img/Ellipse_линкин-1.svg"
                   alt="лого-линкиндин-white"
-                />
+                /> -->
               </a>
             </li>
           </ul>
@@ -392,7 +390,7 @@
           <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
           <form>
             <input name="q" placeholder="E-mail" class="footer-form" />
-            <input type="submit" value="Подписаться" class="button" />
+            <button class="button footer-bn">Подписаться</button>
           </form>
         </div>
       </div>

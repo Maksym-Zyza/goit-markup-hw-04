@@ -20,8 +20,8 @@ p {
   margin-bottom: 0;
 }
 
-.img {
-  display: inline-block;
+img {
+  display: block;
 }
 
 /* Утилиты*/
@@ -95,12 +95,12 @@ p {
 
 /* Ел. адрес и телефон */
 .page-header-adres {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-left: auto;
 }
 
-.page-header-adres .item + .item {
+.page-header-adres .adres-item + .adres-item {
   margin-left: 30px;
 }
 
@@ -116,15 +116,50 @@ p {
   color: var(--accent-color);
 }
 
+.adres-item::before {
+  content: " ";
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #ffffff;
+}
+
+.adres-item:nth-child(1)::before {
+  background-image: url(../img/envelope.svg);
+}
+
+.adres-item:nth-child(2)::before {
+  background-image: url(../img/Tel.svg);
+}
+
 /* Hero */
 .hero {
   text-align: center;
-  padding-top: 200px;
   padding-bottom: 280px;
-  background: rgba(47, 48, 58, 0.8);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(47, 48, 58, 0.8);
+  background-image: url(../img/Header_img.jpg);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(47, 48, 58, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
+  padding-top: 200px;
   padding-bottom: 30px;
   color: var(--light-text-color);
 
@@ -133,6 +168,25 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.button {
+  min-width: 200px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 /* Section title */
@@ -145,8 +199,35 @@ p {
 }
 
 /* Section 2 - Преймущества */
-.benefits .item + .item {
+.benefits .benefits-item + .benefits-item {
   margin-left: 30px;
+}
+
+.benefits-item::before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.benefits-item:nth-child(1)::before {
+  background-image: url(../img/antenna_1.svg);
+}
+
+.benefits-item:nth-child(2)::before {
+  background-image: url(../img/clock_1.svg);
+}
+
+.benefits-item:nth-child(3)::before {
+  background-image: url(../img/diagram_1.svg);
+}
+
+.benefits-item:nth-child(4)::before {
+  background-image: url(../img/astronaut_1.svg);
 }
 
 .benefits-title {
@@ -279,8 +360,43 @@ p {
   text-transform: uppercase;
 }
 
-.footer-accede-social-pages .item + .item {
+.footer-accede-social-pages {
+  margin: 0;
+}
+
+.footer-accede-social-pages .social-item + .social-item {
   margin-left: 10px;
+}
+
+.social-item::before {
+  content: " ";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social-item:nth-child(1)::before {
+  background-image: url(../img/Ellipse_инста-1.svg);
+}
+
+.social-item:nth-child(2)::before {
+  background-image: url(../img/Ellipse_twitter.svg);
+}
+
+.social-item:nth-child(3)::before {
+  background-image: url(../img/Ellipse_фейсбук-1.svg);
+}
+
+.social-item:nth-child(4)::before {
+  background-image: url(../img/Ellipse_линкин-1.svg);
+}
+
+.social-item:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 .footer-subscribe {
@@ -303,30 +419,30 @@ p {
 } */
 
 /* Button */
-.button {
-  min-width: 200px;
-  display: inline-block;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 10px 32px;
-
-  color: var(--light-text-color);
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  text-align: center;
+.footer-bn::after {
+  display: inline-flex;
+  align-items: center;
+  content: " ";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../img/icon_send.svg);
+  background-size: contain;
 }
 
 /* Footer form */
 .footer-form {
+  width: 358px;
+  height: 50px;
+  padding-left: 11px;
+
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 /* СТРАНИЦА - Portfolio */
