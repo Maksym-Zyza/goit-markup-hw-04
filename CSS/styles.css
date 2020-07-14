@@ -43,7 +43,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 .nav-box {
@@ -55,6 +54,11 @@ img {
   margin-right: 85px;
   padding-top: 28px;
   padding-bottom: 29px;
+}
+
+.logo-item {
+  width: 153px;
+  height: 31px;
 }
 
 .section {
@@ -104,35 +108,30 @@ img {
   margin-left: 30px;
 }
 
-.page-header-adres a {
+.adres-item-link {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
   color: var(--second-text-color);
+  fill: var(--second-text-color);
 }
 
-.page-header-adres a:hover,
-.page-header-adres a:focus {
+.adres-item-link:hover,
+.adres-item-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.adres-item::before {
-  content: " ";
-  display: inline-block;
-  width: 18px;
+.adres-item-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.adres-item-telephone {
+  width: 10px;
   height: 15px;
   margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-color: #ffffff;
-}
-
-.adres-item:nth-child(1)::before {
-  background-image: url(../img/envelope.svg);
-}
-
-.adres-item:nth-child(2)::before {
-  background-image: url(../img/Tel.svg);
 }
 
 /* Hero */
@@ -203,31 +202,17 @@ img {
   margin-left: 30px;
 }
 
-.benefits-item::before {
-  content: " ";
+.benefits-background {
   display: block;
   width: 270px;
-  height: 120px;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f5f4fa;
 }
 
-.benefits-item:nth-child(1)::before {
-  background-image: url(../img/antenna_1.svg);
-}
-
-.benefits-item:nth-child(2)::before {
-  background-image: url(../img/clock_1.svg);
-}
-
-.benefits-item:nth-child(3)::before {
-  background-image: url(../img/diagram_1.svg);
-}
-
-.benefits-item:nth-child(4)::before {
-  background-image: url(../img/astronaut_1.svg);
+.benefits-item-element {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
 }
 
 .benefits-title {
@@ -306,9 +291,36 @@ img {
   margin-left: 10px;
 }
 
+.member-social-element {
+  --color1: #afb1b8;
+  --color4: var(--light-text-color);
+}
+
+.member-social-element:hover {
+  --color1: var(--light-text-color);
+  --color4: var(--accent-color);
+}
+
 /* Клиенты */
 .customers .item + .item {
   margin-left: 30px;
+}
+
+.customers-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.customers-background:hover,
+.customers-background:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Футер */
@@ -360,43 +372,16 @@ img {
   text-transform: uppercase;
 }
 
-.footer-accede-social-pages {
-  margin: 0;
-}
-
-.footer-accede-social-pages .social-item + .social-item {
+.footer-accede-social .social-item + .social-item {
   margin-left: 10px;
 }
 
-.social-item::before {
-  content: " ";
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.social-item-element {
+  fill: var(--light-text-color);
 }
 
-.social-item:nth-child(1)::before {
-  background-image: url(../img/Ellipse_инста-1.svg);
-}
-
-.social-item:nth-child(2)::before {
-  background-image: url(../img/Ellipse_twitter.svg);
-}
-
-.social-item:nth-child(3)::before {
-  background-image: url(../img/Ellipse_фейсбук-1.svg);
-}
-
-.social-item:nth-child(4)::before {
-  background-image: url(../img/Ellipse_линкин-1.svg);
-}
-
-.social-item:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
+.social-item-element:hover {
+  fill: var(--accent-color);
 }
 
 .footer-subscribe {
@@ -411,23 +396,19 @@ img {
   margin-left: 94px;
 }
 
-/* .footer-developed {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-} */
-
-/* Button */
-.footer-bn::after {
+/* Footer button */
+.footer-button {
   display: inline-flex;
   align-items: center;
-  content: " ";
-  width: 24px;
-  height: 24px;
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 28px;
+}
+
+.button-icon {
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
-  background-image: url(../img/icon_send.svg);
-  background-size: contain;
 }
 
 /* Footer form */

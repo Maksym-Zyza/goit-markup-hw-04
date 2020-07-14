@@ -20,7 +20,9 @@
       <div class="container nav-box flex">
         <nav class="flex">
           <a class="logo" href="./">
-            <img src="./img/web-studio.svg" alt="Web Studio" />
+            <svg class="logo-item">
+              <use href="./img/sprite.svg#icon-web-studio"></use>
+            </svg>
           </a>
           <ul class="site-nav list">
             <li class="item">
@@ -35,14 +37,18 @@
       
         <ul class="page-header-adres list">
           <li class="adres-item">
-            <a href="mailto:info@devstudio.com">
-              <!-- <img src="./img/envelope.svg" alt="envelope" /> -->
+            <a class="adres-item-link" href="mailto:info@devstudio.com">
+              <svg class="adres-item-envelope">
+                <use href="./img/sprite.svg#icon-envelope"></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="adres-item">
-            <a href="tel:+380961111111">
-              <!-- <img src="./img/Tel.svg" alt="telephone" /> -->
+            <a class="adres-item-link" href="tel:+380961111111">
+              <svg class="adres-item-telephone">
+                <use href="./img/sprite.svg#icon-Tel"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -213,8 +219,10 @@
     <footer class="footer">
       <div class="container flex baseline">
         <div class="address-container">
-          <a href="./">
-            <img src="./img/Web_Studio_white.svg" alt="Web Studio" />
+          <a class="address-logo-link flex" href="./">
+            <svg class="address-logo" width="153" height="31">
+              <use href="./img/sprite.svg#icon-Web_Studio_white"></use>
+            </svg>
           </a>
           <address>
             <ul class="address list">
@@ -231,45 +239,54 @@
             </ul>
           </address>
         </div>
-    
+      
         <div class="social-pages-container">
           <h3 class="footer-accede">присоединяйтесь</h3>
-          <ul class="footer-accede-social-pages list flex">
-            <li class="item">
+          <ul class="footer-accede-social list flex">
+            <li class="social-item">
               <a aria-label="instagram link" href="">
-                <img src="./img/Ellipse_инста-1.svg" alt="лого-инстаграм-white" />
+                <svg class="social-item-element" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-Ellipse_instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="item">
+            <li class="social-item">
               <a aria-label="twitter link" href="">
-                <img src="./img/Ellipse_twitter.svg" alt="лого-твитер-white" />
+                <svg class="social-item-element" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-Ellipse_twitter"></use>
+                </svg>
               </a>
             </li>
-            <li class="item">
+            <li class="social-item">
               <a aria-label="facebook link" href="">
-                <img src="./img/Ellipse_фейсбук-1.svg" alt="лого-фейсбук-white" />
+                <svg class="social-item-element" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-Ellipse_facebook"></use>
+                </svg>
               </a>
             </li>
-            <li class="item">
+            <li class="social-item">
               <a aria-label="linkidun link" href="">
-                <img src="./img/Ellipse_линкин-1.svg" alt="лого-линкиндин-white" />
+                <svg class="social-item-element" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-Ellipse_linkindin"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-    
-        <div class="subscribe-container">
-          <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
-          <form>
-            <input name="q" placeholder="E-mail" class="footer-form" />
-            <input type="submit" value="Подписаться" class="button" />
-          </form>
-        </div>
+      
+      <div class="subscribe-container">
+        <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
+        <form>
+          <input name="q" placeholder="E-mail" class="footer-form" />
+          <button class="button footer-button">
+            Подписаться
+            <svg class="button-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-icon_send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
-    
-      <!-- <p lang="en" class="footer-developed">
-            2020 | Developed by GoIT Students
-          </p> -->
+      </div>
     </footer>
   </body>
 </html>
