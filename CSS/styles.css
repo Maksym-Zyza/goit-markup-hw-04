@@ -52,8 +52,8 @@ img {
 .logo {
   margin-left: 15px;
   margin-right: 85px;
-  padding-top: 28px;
-  padding-bottom: 29px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-item {
@@ -262,7 +262,7 @@ img {
 }
 
 .member-background {
-  background-color: var(--light-text-color);
+  background-color: #ffffff;
 }
 
 .team-member {
@@ -291,13 +291,14 @@ img {
   margin-left: 10px;
 }
 
-.member-social-element {
+.member-social-link {
   --color1: #afb1b8;
-  --color4: var(--light-text-color);
+  --color4: #ffffff;
 }
 
-.member-social-element:hover {
-  --color1: var(--light-text-color);
+.member-social-link:hover,
+.member-social-link:focus {
+  --color1: #ffffff;
   --color4: var(--accent-color);
 }
 
@@ -343,7 +344,7 @@ img {
 }
 
 .address-map {
-  margin-top: 20px;
+  display: block;
   color: var(--light-text-color);
   font-style: normal;
   text-decoration: none;
@@ -377,10 +378,11 @@ img {
 }
 
 .social-item-element {
-  fill: var(--light-text-color);
+  fill: #ffffff;
 }
 
-.social-item-element:hover {
+.social-item-element:hover,
+.social-item-element:focus {
   fill: var(--accent-color);
 }
 
