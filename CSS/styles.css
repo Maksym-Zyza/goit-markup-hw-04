@@ -381,12 +381,14 @@ img {
 }
 
 .social-item-element {
+  display: flex;
   fill: #ffffff;
+  border-radius: 50%;
 }
 
 .social-item-element:hover,
 .social-item-element:focus {
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .footer-subscribe {
